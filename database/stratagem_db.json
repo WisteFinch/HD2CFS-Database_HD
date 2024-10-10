@@ -1,0 +1,439 @@
+{
+    "type": "database",
+    "name": "stratagem_db",
+    "objects": [
+        {
+            "type": "table",
+            "database": null,
+            "name": "stratagem_table",
+            "withoutRowId": false,
+            "strict": false,
+            "ddl": "CREATE TABLE stratagem_table (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name TEXT, nameZh TEXT, icon TEXT, steps TEXT DEFAULT \"[]\")",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "INTEGER",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT "
+                        },
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "name",
+                    "type": "TEXT"
+                },
+                {
+                    "name": "nameZh",
+                    "type": "TEXT"
+                },
+                {
+                    "name": "icon",
+                    "type": "TEXT"
+                },
+                {
+                    "name": "steps",
+                    "type": "TEXT",
+                    "constraints": [
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT \"[]\""
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "Reinforce",
+                    "增援",
+                    "reinforce",
+                    "[1,2,4,3,1]"
+                ],
+                [
+                    2,
+                    "Emergency Beacon",
+                    "求救信标",
+                    "emergency_beacon",
+                    "[1,2,4,1]"
+                ],
+                [
+                    3,
+                    "NUX-223 Hellbomb",
+                    "NUX-223地狱火炸弹",
+                    "hellbomb",
+                    "[1,3,4,2,1,2]"
+                ],
+                [
+                    4,
+                    "ME-1 Sniffer Metal Detector",
+                    "ME-1“侦察犬”金属探测器",
+                    "sniffer_metal_detector",
+                    "[2,2,4,1]"
+                ],
+                [
+                    1001,
+                    "Resupply",
+                    "补给",
+                    "resupply",
+                    "[2,2,1,4]"
+                ],
+                [
+                    1002,
+                    "REP-80",
+                    "REP-80维修工具",
+                    "rep_80",
+                    "[2,2,3,4,2]"
+                ],
+                [
+                    1101,
+                    "AC-22 Dum-Dum",
+                    "AC-22“达姆”",
+                    "dum_dum",
+                    "[2,3,2,1,1,4]"
+                ],
+                [
+                    1102,
+                    "EAT-17",
+                    "EAT-17抛弃式反战车火箭",
+                    "eat_17",
+                    "[2,3,4,1,2]"
+                ],
+                [
+                    1103,
+                    "FLAM-40 Incinerator",
+                    "FLAM-40“焚化炉”",
+                    "incinerator",
+                    "[2,3,2,4,3]"
+                ],
+                [
+                    1104,
+                    "LAS-98 Laser Cannon",
+                    "LAS-98激光大炮",
+                    "laser-cannon",
+                    "[2,3,2,1,3]"
+                ],
+                [
+                    1105,
+                    "M-25 Rumbler",
+                    "M-25“雷鸣者”",
+                    "rumbler",
+                    "[2,3,1,3,3]"
+                ],
+                [
+                    1106,
+                    "MG-94 Machine Gun",
+                    "MG-94机枪",
+                    "mg_94_machine_gun",
+                    "[2,3,2,1,3]"
+                ],
+                [
+                    1107,
+                    "MGX-42 Machine Gun",
+                    "MGX-42机枪",
+                    "mgx_42_machine_gun",
+                    "[2,3,2,1,1,3]"
+                ],
+                [
+                    1108,
+                    "MLS-4X Commando",
+                    "MLS-4X“突击兵”",
+                    "commando",
+                    "[2,3,1,2,4]"
+                ],
+                [
+                    1109,
+                    "Obliterator Grenade Launcher",
+                    "“消灭者”榴弹发射器",
+                    "obliterator_grenade_launcher",
+                    "[2,3,1,3,2]"
+                ],
+                [
+                    1110,
+                    "REC-6 Demolisher",
+                    "REC-6“爆破者”",
+                    "demolisher",
+                    "[2,3,4,1,1]"
+                ],
+                [
+                    1111,
+                    "RL-112 Recoilless Rifle",
+                    "EL-112无后座力步枪",
+                    "recoilless_rifle",
+                    "[2,3,4,4,3]"
+                ],
+                [
+                    1112,
+                    "TOX-13 Avenger",
+                    "TOX-13“复仇者”",
+                    "avenger",
+                    "[2,3,2,4,4]"
+                ],
+                [
+                    1201,
+                    "AD-289 Angel",
+                    "AD-289“天使”无人机",
+                    "angel",
+                    "[2,1,3,3,4,2]"
+                ],
+                [
+                    1202,
+                    "AD-334 Guard Dog",
+                    "AD-334“护卫犬”",
+                    "guard_dog",
+                    "[2,1,3,1,4,2]"
+                ],
+                [
+                    1203,
+                    "LIFT-850 Jump Pack",
+                    "LIFT-850喷射背包",
+                    "jump_pack",
+                    "[2,1,1,2,1]"
+                ],
+                [
+                    1204,
+                    "Resupply Pack",
+                    "补给背包",
+                    "resupply_pack",
+                    "[2,1,2,2,4]"
+                ],
+                [
+                    1205,
+                    "SH-20 Shield Generator Pack",
+                    "SH-20防护罩生成包",
+                    "shield_generator_pack",
+                    "[2,1,3,4,3,4]"
+                ],
+                [
+                    1206,
+                    "SH-32 Directional Kinetic Shield",
+                    "SH-32定向动能护盾",
+                    "directional_kinetic_shield",
+                    "[2,1,3,4,3,2]"
+                ],
+                [
+                    1301,
+                    "EXO-44 Walker Exosuit",
+                    "EXO-48“步行者”外骨骼装甲",
+                    "walker_exosuit",
+                    "[2,4,1,3,2,2]"
+                ],
+                [
+                    1302,
+                    "EXO-48 Obsidian Exosuit",
+                    "EXO-48“黑曜石”外骨骼装甲",
+                    "obsidian_exosuit",
+                    "[2,4,1,3,2,3]"
+                ],
+                [
+                    1303,
+                    "EXO-51 Lumberer Exosuit",
+                    "EXO-51“重步者”外骨骼装甲",
+                    "lumberer_exosuit",
+                    "[2,4,1,3,2,4]"
+                ],
+                [
+                    1304,
+                    "M5 APC",
+                    "M5 APC",
+                    "m5_apc",
+                    "[2,4,2,3,3,4"
+                ],
+                [
+                    1305,
+                    "M5-32 HAV",
+                    "M5-32 HAV",
+                    "m5_32_hav",
+                    "[2,4,1,3,1,2]"
+                ],
+                [
+                    1306,
+                    "TD-110 Bastion",
+                    "TD-110“堡垒”",
+                    "bastion",
+                    "[2,4,2,3,1,4]"
+                ],
+                [
+                    1307,
+                    "MC-109 Hammer Motorcycle",
+                    "MC-109“神锤”摩托车",
+                    "hammer_motorcycle",
+                    "[2,4,2,3,3,1]"
+                ],
+                [
+                    2001,
+                    "Airstrike",
+                    "空袭",
+                    "airstrike",
+                    "[4,1,2,4,3]"
+                ],
+                [
+                    2002,
+                    "Close Air Support",
+                    "近距离空中支援",
+                    "close_air_support",
+                    "[4,4,,2,3]"
+                ],
+                [
+                    2003,
+                    "Heavy Strafing Run",
+                    "重机枪扫射",
+                    "heavy_strafing_run",
+                    "[4,4,2,1]"
+                ],
+                [
+                    2004,
+                    "Incendiary Bombs",
+                    "“地狱火”燃烧炸弹",
+                    "incendiary_bombs",
+                    "[4,1,3,4]"
+                ],
+                [
+                    2005,
+                    "Missile Barrage",
+                    "导弹弹幕",
+                    "missile_barrage",
+                    "[4,2,2,2,3,2]"
+                ],
+                [
+                    2006,
+                    "Orbital Laser Strike",
+                    "外层空间轨道激光炮攻击",
+                    "orbital_laser_strike",
+                    "[4,1,3,1,4,3]"
+                ],
+                [
+                    2007,
+                    "Railcannon Strike",
+                    "轨道炮攻击",
+                    "railcannon_strike",
+                    "[4,2,1,2,3]"
+                ],
+                [
+                    2008,
+                    "Shredder Missile Strike",
+                    "“撕裂者”导弹攻击",
+                    "shredder_missile_strike",
+                    "[4,3,4,3,2,2,4]"
+                ],
+                [
+                    2009,
+                    "Sledge Precision Artillery",
+                    "“大锤”精确火炮",
+                    "sledge_precision_artillery",
+                    "[4,1,3,1,2,4]"
+                ],
+                [
+                    2010,
+                    "Static Field Conductors",
+                    "静电防护导体",
+                    "static_field_conductors",
+                    "[4,1,3,2]"
+                ],
+                [
+                    2011,
+                    "Strafing Run",
+                    "机枪扫射",
+                    "strafing_run",
+                    "[4,4,1]"
+                ],
+                [
+                    2012,
+                    "Thunderer Barrage",
+                    "“轰鸣者”火力网",
+                    "thunderer_barrage",
+                    "[4,2,1,1,3,2]"
+                ],
+                [
+                    2013,
+                    "Vindicator Dive Bomb",
+                    "“辩护者”掩体炸弹",
+                    "vindicator_dive_bomb",
+                    "[4,4,4]"
+                ],
+                [
+                    3001,
+                    "A\/AC-6 Tesla Tower",
+                    "A\/AC-6特斯拉塔",
+                    "tesla_tower",
+                    "[3,2,2,1,4,3]"
+                ],
+                [
+                    3002,
+                    "A\/GL-8 Launcher Turret",
+                    "A\/GL-8 榴弹发射器炮台",
+                    "launcher_turret",
+                    "[3,2,1,4,4,2]"
+                ],
+                [
+                    3003,
+                    "A\/MG-11 Minigun Turret",
+                    "A\/MG-11转管机炮炮台",
+                    "minigun_turret",
+                    "[3,2,1,4,3]"
+                ],
+                [
+                    3004,
+                    "A\/RX-34 Railcannon Turret",
+                    "A\/RX-34轨道炮炮台",
+                    "railcannon_turret",
+                    "[3,2,1,3,4]"
+                ],
+                [
+                    3005,
+                    "Airdropped Anti-Personnel Mines",
+                    "空投反人员地雷",
+                    "airdropped_anti_personnel_mines",
+                    "[3,4,2,1]"
+                ],
+                [
+                    3006,
+                    "Airdropped Stun Mines",
+                    "空投眩晕地雷",
+                    "airdropped_stun_mines",
+                    "[3,4,1,2]"
+                ],
+                [
+                    3007,
+                    "Anti-Personnel Barrier",
+                    "反人员屏障",
+                    "anti_personnel_barrier",
+                    "[3,4,2,2,4]"
+                ],
+                [
+                    3008,
+                    "AT-47 Anti-Tank Emplacement",
+                    "AT-47反坦克炮台",
+                    "anti_tank_emplacement",
+                    "[3,3,1,1,4,3]"
+                ],
+                [
+                    3009,
+                    "Distractor Beacon",
+                    "“干扰者”信标",
+                    "distractor_beacon",
+                    "[3,2,4]"
+                ],
+                [
+                    3010,
+                    "Humblebee UAV Drone",
+                    "“蜜蜂”无人机",
+                    "humblebee_uav_drone",
+                    "[3,1,4]"
+                ],
+                [
+                    3011,
+                    "Thunderer Smoke Round",
+                    "“轰鸣者”烟雾",
+                    "thunderer_smoke_round",
+                    "[4,2,1,1,2]"
+                ]
+            ]
+        }
+    ]
+}
