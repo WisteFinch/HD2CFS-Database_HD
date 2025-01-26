@@ -44,7 +44,7 @@ jobs:
           isAbsolutePath: false
           file: 'index.json'
           content: |
-            {"date":"${{ env.MY_DATE }}", "db_path":"database/stratagem_db.json", "icons_path":"database/icons/", "name":"hd_db"}
+            {"date":"${{ env.MY_DATE }}", "db_path":"database/stratagem_db.json", "icons_path":"database/icons/", "name":"hd_db", "nameEn":"Helldivers Stratagems Database", "nameZh":"绝地潜兵1战备数据库"}
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
